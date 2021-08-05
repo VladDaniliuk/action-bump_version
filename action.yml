@@ -1,8 +1,8 @@
-name: "Build Android release APK"
+name: "Bump version"
 branding:
   icon: "package"
   color: "red"
-description: "Build Android release APK and upload as a github release."
+description: "Bump version and push."
 author: "VladDaniliuk"
 inputs:
   GITHUB_TOKEN:
