@@ -1,6 +1,6 @@
-# action-dump_version
+# action-bump_version
 
-🕷 Dump version name and code when you push
+🕷 Bump version name and code when you push
 
 ## Usage
 
