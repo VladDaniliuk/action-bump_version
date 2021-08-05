@@ -1,6 +1,6 @@
-# action-release-releaseapk
+# action-dump_version
 
-🕷 Build and release release APK when your push
+🕷 Dump version name and code when you push
 
 ## Usage
 
@@ -33,10 +33,10 @@ jobs:
       uses: VladDaniliuk/action-release-releaseapk@master
       env:
        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-       VERSION_VARIABLE: versionName
+       VERSION_NAME: versionName
+       VERSION_CODE: versionCode
        APP_FILE: buildSrc/Android.kt
-       APP_FOLDER: app
-       RELEASE_TITLE: New Build
+       CHANGES_LEVEL: changesLevel
 ```
 
 ### Secrets
@@ -51,9 +51,10 @@ I am unsure as to why using the default `GITHUB_TOKEN` provided universally will
 
 You'll need to provide these environment variables to specify exactly what information is needed to build the APK.
 
-* **APP_FOLDER**: main folder to search for the apk. Most of the time, it's `app`
 * **APP_FILE**: file to search for the versin. This action only used with kotlins `buildSrc`
-* **RELEASE_TITLE**: title for releasing application
+* **VERSION_NAME**: variable in buildSrc with version name
+* **VERSION_CODE**: variable in buildsrc with version code
+* **CHANGES_LEVEL**: variable that say level of changes (`small`,`medium`,`big`)
 
 ## Credits
 
