@@ -8,7 +8,7 @@ To use the action simply add the following lines to your `.github/workflows/andr
 
 #### YML
 ```
-name: Build & Publish Release APK
+name: Bump application version
 
 on:
   push:
