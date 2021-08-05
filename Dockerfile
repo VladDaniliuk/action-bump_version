@@ -1,12 +1,12 @@
 FROM debian:10.1
 
 LABEL "version"="0.0.7"
-LABEL "com.github.actions.name"="Release APK Publisher using kts"
-LABEL "com.github.actions.description"="Build & Publish Release APK on Github using kts"
+LABEL "com.github.actions.name"="Bump version using kts"
+LABEL "com.github.actions.description"="Bump version on Github using kts"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="red"
 
-LABEL "repository"="https://github.com/VladDaniliuk/action-release-releaseapk"
+LABEL "repository"="https://github.com/VladDaniliuk/action-bump_version"
 LABEL "maintainer"="VladDaniliuk"
 
 RUN apt update \
